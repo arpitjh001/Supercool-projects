@@ -4,13 +4,18 @@
   3. Include jars available in jars.zip  
   4. Change line no. 20 in split_and_conquer.java as the location where you will extract your tools.zip and place both pdftohtml.exe and
      convert.exe files. In my system it is : 
+     
      bw.write("cd C:\\Users\\welcome\\Desktop"+"\n"); //location of pdftohtml.exe and convert.exe file
-  5. Change the address in location string on line no. 16 in split_and_conquer.java to the location where you have kept sample_input_file
-     folder.
+  
+  5. Change the address in location string on line no. 16 in split_and_conquer.java to the location where you have kept   
+     sample_input_file folder.
+     
           String location = "C:\\Users\\welcome\\Desktop\\pdf"; //for testing
                       ---------change to------
           String location = "location/of/your/sample input files";
-  6. Uncomment line 68 for getting images from pdf
+          
+  6. Uncomment line 68 for getting images from pdf :
+  
           c.executebatch(batchfile);
 -----------------------------------------------------------------------------------------------------------------------------------
 -Short Description : 
