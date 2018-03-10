@@ -25,9 +25,9 @@ This java code basically used for extracting application number,journal number a
 ------------------------------------------------------------------------------------------------------------------------------------
 -Challenges Faced :
 
-1.Trademark application  inside the journal may be of multipage (span to two or more pages). So merging them together is a difficult task. Also you will find some journals at the starting pages contain cover page and index which is of no use. For this two situation I have developed a concept of useless page. First I split all the pages of blindly. Then I have first renamed all these pages with the format told above or useless if no regex of class number or application number is found and then merge the consecutive pages together in a manner that the first page is not a useless page and the other in a pair will be a useless page.In short merge all useless page to the page above them and then deleting the second.
+1. Trademark application  inside the journal may be of multipage (span to two or more pages). So merging them together is a difficult task. Also you will find some journals at the starting pages contain cover page and index which is of no use. For this two situation I have developed a concept of useless page. First I split all the pages of pdf blindly. Then I have first renamed all these pages either as per the format told above or useless if no regex of class number or application number is found and then merge the consecutive pages together in a manner that the first page is not a useless page and the other in a pair will be a useless page.In short merge all useless page to the page above them and then deleting the second.And then finally deleting the index pages from the starting if exists.
 
-2.Writing regex for extracting application number is itself a challenging task as there are lot of different scenerios .
+2. Writing regex for extracting application number is itself a challenging task as there are lot of different scenerios .
   
  I have provided sample_input_files.zip. You can also download more Journals from the following link : 
 -http://www.ipindia.gov.in/journal-tm.htm
